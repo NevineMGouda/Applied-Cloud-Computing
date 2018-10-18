@@ -31,7 +31,7 @@ def multiple_worker_task():
         break
     # This is responsible for distributing the files equally between all workers with an accurate load balancing approach
     workers_count = len(workers_list)
-    file_names = glob.glob('data_files/*')
+    file_names = glob.glob('data/*')
     files_count = len(file_names)
     worker_load = files_count/workers_count
 
